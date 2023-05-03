@@ -13,6 +13,16 @@ app.get('/', (req, res) => {
     res.send('Software Ferreteria')
 })
 
+app.get('/cliente', (req,res)=>{
+    conexion.query('SELECT nombre from cliente', [req.params.jornada], (error, fila)=>{
+        if(error){
+            throw error
+        }else{
+            res.send(fila)
+        }
+    })
+})
+
 app.listen(PORT)
 console.log('server on port', PORT)
 

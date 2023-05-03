@@ -1,7 +1,7 @@
 export const PORT = process.env.PORT || 3000
 
-export const DB_HOST = process.env.DB_HOST || 'localhost'
-export const DB_USER = process.env.DB_USER || 'root'
-export const DB_PASSWORD = process.env.DB_PASSWORD || ''
-export const DB_NAME = process.env.DB_NAME || 'mundial'
-export const DB_PORT = process.env.DB_PORT || 3308
+export const DB_HOST = "containers-us-west-85.railway.app"
+export const DB_USER = "root"
+export const DB_PASSWORD = "1iWoxQhYiv7y5IENJZLj"
+export const DB_NAME = "railway"
+export const DB_PORT = 7377
